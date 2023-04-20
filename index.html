@@ -9,7 +9,7 @@
     </head>
     <body>
         <main>
-            <form>
+            <form id="signup">
                 <section class="first_section_grid">
                     <label for="full_name">Full Name</label>
                     <input type="text" name="full_name" id="full_name" />
@@ -18,30 +18,28 @@
                 </section>
 
                 <section class="second_section_grid">
-                        <label for="user_name">User name</label>
-                        <input type="text" name="user_name" id="user_name" />
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" />
-                        <label for="repeat_password">Repeat Password</label>
-                        <input type="password" name="repeat_password" id="repeat_password" />
-                    
+                    <label for="user_name">User name</label>
+                    <input type="text" name="user_name" id="user_name" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                    <label for="repeat_password">Repeat Password</label>
+                    <input type="password" name="repeat_password" id="repeat_password" />
                 </section>
 
                 <section class="third_section_grid">
-
                     <fieldset>
                         <legend>Payment</legend>
                         <div class="radio">
-                            <input type="radio" name="payment" id="free" />
+                            <input type="radio" name="payment" value="free" id="free" />
                             <label for="free">Free</label>
-                            <input type="radio" name="payment" id="cheap" />
+                            <input type="radio" name="payment" value="cheap" id="cheap" />
                             <label for="cheap">Cheap</label>
-                            <input type="radio" name="payment" id="fair" />
+                            <input type="radio" name="payment" value="fair" id="fair" checked/>
                             <label for="fair">Fair</label>
-                            <input type="radio" name="payment" id="expensive" />
+                            <input type="radio" name="payment" value="expensive" id="expensive" />
                             <label for="expensive">Expensive</label>
                         </div>
-    
+
                         <div class="select">
                             <label for="pay_every">Pay Every:</label>
                             <select name="pay_every" id="pay_every">
@@ -54,20 +52,20 @@
                 </section>
 
                 <section class="fourth_section_grid">
-                    
-                    <label for="recieve_mails"><input type="checkbox" name="recieve_mails" id="recieve_mails"> I would like to recieve emails</label>
-                    
-                    <label for="accept"><input type="checkbox" name="accept" id="accept"> I accept the terms and conditions</label>
+                    <label for="recieve_mails"
+                        ><input type="checkbox" name="recieve_mails" id="recieve_mails" checked /> I would like to recieve emails</label
+                    >
+
+                    <label for="accept"><input type="checkbox" name="accept" id="accept" required /> I accept the terms and conditions</label>
                 </section>
 
-                <section class="buttons_grid"> 
-                    <input type="button" value="Sign up">
-                    <input type="reset" value="Clear form">
+                <section class="buttons_grid">
+                    <input type="submit" value="Sign up" id="submit-btn" disabled/>
+                    <input type="reset" value="Clear form" id="reset-btn" />
                 </section>
-
             </form>
-
         </main>
 
+        <script src="script.js"></script>
     </body>
 </html>

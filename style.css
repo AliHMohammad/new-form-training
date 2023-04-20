@@ -13,6 +13,7 @@ form{
 .first_section_grid {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 2px;
     margin: 30px 30px;
 }
 
@@ -20,12 +21,14 @@ form{
     display: grid;
     grid-template-columns: auto auto;
     margin: 30px 30px;
+    gap: 2px;
 }
 
 .third_section_grid {
     display: grid;
     grid-template-areas: "radio select";
-    margin: 30px 30px
+    margin: 30px 30px;
+    gap: 2px;
 }
 
 .fourth_section_grid {
@@ -38,6 +41,12 @@ form{
     display: grid;
     grid-template-columns: auto auto;
     margin: 30px 30px;
+    justify-content: center;
+}
+
+.buttons_grid input {
+    width: 100%;
+    
 }
 
 .select{
