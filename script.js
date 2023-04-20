@@ -4,14 +4,14 @@ window.addEventListener("load", initApp);
 
 //Vi tilføjer en submit eventlistener på vores selve <form>
 function initApp() {
-    document.querySelector("#signup").addEventListener("submit", submitClicked);
+    document.querySelector("#signup_form").addEventListener("submit", submitClicked);
     document.querySelector("#accept").addEventListener("click", termsAccept);
 }
 
 function submitClicked(event) {
     event.preventDefault();
     
-    const elements = document.querySelector("#signup").elements;
+    const elements = document.querySelector("#signup_form").elements;
 
     const signup = {
         fullName: elements.full_name.value,
@@ -24,7 +24,6 @@ function submitClicked(event) {
         TOS: elements.accept.checked,
     }
 
-    
     if (elements.password.value != elements.repeat_password.value) {
         console.error("Password is not the same")
     } else {
