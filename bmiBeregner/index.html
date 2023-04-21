@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI-berenger</title>
+</head>
+
+
+<body>
+    
+    <main>
+        <form class="form_class" id="form_bmi">
+            <h2>Beregn dit BMI</h2>
+            <label for="højde">Din højde (cm)</label>
+            <input type="number" name="højde" id="højde">
+            <label for="vægt">Din vægt (kg)</label>
+            <input type="number" name="vægt" id="vægt">
+
+            <div class="btn-div">
+                <input id="submit_btn" type="submit" value="Beregn BMI">
+                <input id="reset_btn" type="submit" value="Start forfra">
+            </div>
+
+            <div>
+                <h3>Resultat:</h3>
+                <p class="resultat" id="bmi_resultat"></p>
+                <h3>Betydnig:</h3>
+                <p class="resultat" id="bmi_betydning"></p>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
