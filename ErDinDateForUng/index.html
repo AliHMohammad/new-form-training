@@ -14,15 +14,36 @@
     <main>
         <form id="form">
             <h2>Er din date for ung?</h2>
-            <h3 id="resultat"></h3>
+            <h3 class="resultat" id="resultat"></h3>
             <div class="div_container">
                 <label for="person1_alder">Din alder:</label>
                 <input required type="number" name="person1_alder" id="person1_alder"> 
                 <label for="person2_alder">Din dates alder:</label>
                 <input required type="number" name="person2_alder" id="person2_alder">
             </div>
+
+            <div class="div_checklist_container">
+                <label for="rig">Rig <input type="checkbox" name="rig" id="rig"></label>
+                <label for="meget_flot">Meget Flot <input type="checkbox" name="meget_flot" id="meget_flot"></label>
+                <label for="perfekt_højde">Perfekt Højde <input type="checkbox" name="perfekt_højde" id="perfekt_højde"></label>
+            </div>
+            
             <div class="button_container">
                 <input id="submit_btn" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <form id="form2">
+            <h2>Er din date for gammel?</h2>
+            <h3 class="resultat" id="resultat2"></h3>
+            <div class="div_container">
+                <label for="person1_alder">Din alder:</label>
+                <input required type="number" name="person1_alder" id="person1_alder_gammel"> 
+                <label for="person2_alder">Din dates alder:</label>
+                <input required type="number" name="person2_alder" id="person2_alder_gammel">
+            </div>
+            <div class="button_container">
+                <input id="submit_btn_gammel" type="submit" value="Submit">
             </div>
         </form>
     </main>
