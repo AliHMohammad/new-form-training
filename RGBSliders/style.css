@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+}
+
+main {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 100px;
+}
+
+h3 {
+  text-align: center;  
+  margin-bottom: 2px;
+}
+
+.section_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.number {
+    width: 40px;
+}
+
+label{
+    position: relative;
+    top: 13px;
+}
+
+#form_RGB{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2px;
+}
+
+#display {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
