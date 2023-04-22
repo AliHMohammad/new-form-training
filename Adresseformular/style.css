@@ -1,0 +1,67 @@
+
+
+main {
+    display: inline-block;
+    
+}
+
+form {
+    border: 2px solid black;
+    display: grid;
+    padding: 30px;
+}
+
+h3, h5 {
+    text-align: center;
+}
+
+.div_container {
+    display: grid;
+    padding-bottom: 15px;
+}
+
+.padding_bottom {
+    margin-bottom: 15px;
+}
+
+
+.form_fifty {
+    grid-template-columns: 80% 20%;
+    column-gap: 20px;
+}
+
+.form_20_80 {
+    grid-template-columns: 30% 70%;
+    column-gap: 20px;
+}
+
+#husnummer {
+    width: 60%;
+}
+
+#postnummer {
+    width: 90%;
+}
+
+#by {
+    width: 89%;
+}
+
+.above {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+input {
+    height: 20px;
+    border-radius: 3px;
+}
+
+.submit_div {
+    text-align: center;
+}
+
+#submit_btn:hover {
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+}

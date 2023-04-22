@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adresse</title>
+</head>
+<body>
+    
+    <main>
+        
+        <form id="adresse_form">
+            <h3>Adresseformular med automatisk bynavn</h3>
+            <h5>OBS! HAR LAVET BACKEND. DATA BLIVER GEMT</h5>
+            <div class="div_container">
+                <label for="navn">Navn</label>
+                <input type="text" name="navn" id="navn" required>
+            </div>
+
+            <div class="div_container form_fifty">
+                <div class="above">
+                    <label for="gade">Gade/vej</label>
+                    <input type="text" name="gade" id="gade" required>
+                </div>
+
+                <div class="above">
+                    <label for="husnummer">husnr</label>
+                    <input type="number" name="husnummer" id="husnummer" required>
+                </div>
+                
+            </div>
+
+            <div class="div_container form_20_80">
+                <div class="above">
+                    <label for="postnummer">Postnummer</label>
+                    <input type="number" name="postnummer" id="postnummer" required>
+                </div>
+
+                <div class="above">
+                    <label for="by">By</label>
+                    <input type="text" name="by" id="by" required>
+                </div>
+            </div>
+
+            <div class="div_container"> 
+                <label for="evt">Evt. C/O adresse <span>(frivilligt)</span></label>
+                <input class="padding_bottom " type="text" name="evt" id="evt">
+                <label for="tlf">Telefonnummer <span>(frivilligt)</span></label>
+                <input class="padding_bottom " type="number" name="tlf" id="tlf">
+                <label for="mail">E-mail</label>
+                <input class="padding_bottom " type="email" name="mail" id="mail" required>
+            </div>
+
+            <div class="submit_div">
+                <input id="submit_btn" type="submit" value="Submit">
+            </div>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
